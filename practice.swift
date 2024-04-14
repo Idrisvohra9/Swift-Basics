@@ -1,3 +1,4 @@
+// Q.15
 import Foundation
 
 // Q.14
@@ -16,9 +17,6 @@ let totalCost = calculateTotalCost(shopping_cart: [
 ])
 
 print("Q.14 Ans.->", totalCost)
-
-// Q.15
-import Foundation
 
 class Shape {
   let radius: Float
@@ -67,5 +65,29 @@ let onlyEven = { (arr: [Int]) -> [Int] in
 }
 
 let numArray = [10, 5, 3, 9, 11, 15, 16]
-print("Q.17 Ans.->",onlyEven(numArray))
+print("Q.17 Ans.->", onlyEven(numArray))
 
+// Q.10
+func average(numbers: [Int]) -> Double {
+  var sum = 0
+  for number in numbers {
+    sum += number
+  }
+  return Double(sum) / Double(numbers.count)
+}
+
+print("Q.10 Ans.->", average(numbers: numArray))
+
+// Q.8
+func findLargest(numbers: [Int]) -> Int {
+  var largest = numbers[0]
+
+  for number in numbers {
+    if number > largest {
+      largest = number
+    }
+  }
+  return largest
+}
+
+print("Q8. Ans-> \(findLargest(numbers: numArray))")
